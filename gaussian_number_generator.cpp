@@ -6,7 +6,12 @@
 #include <cmath>
 int main()
 {
+    
+    // elimizdeki bir uygulama icin belirleyici bir kaynak (ornegin bir donanım) yoksa
+    // ayni rastgele sayilari ureten bir olusturucu (generator) olarak kullanilabilir.
     std::random_device rd{};
+    
+    // mersenne_twister_engine = yuksek hassasiyette UIntType tipinde isaretsiz random sayilar saglar.
     std::mt19937 gen{rd()};
  
     /*
