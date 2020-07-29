@@ -19,7 +19,7 @@ int main()
     std::cout << '\n';
  
     std::for_each(nums.begin(), nums.end(), [](int &n){ n++; }); // LAMBDA IFADESI ILE VEKTOR ELEMANLARI 1' er ARTTIRILIR
-                                                                 // CAPTURE (BOS), PARAMETRE VE LAMBDA BOLUMUNDEN ( "{n++}" ) OLUSUR.
+                                                                 // LAMBDA IFADESI: CAPTURE (BOS) - PARAMETRE - LAMBDA ( "{n++}" ) OLUSUR.
     // Sum::operator() HER NUMARA ICIN CAGIRILIR
     Sum s = std::for_each(nums.begin(), nums.end(), Sum());
  
