@@ -4,10 +4,7 @@ using namespace std;
 class sunday
 {
     public:
-    int i; 
-    int j; 
-    int k; 
-    int z;
+    int i, j, k, z;
     
     int x[3] = {7, 1, 1900}; //first sunday
     int y[3];
