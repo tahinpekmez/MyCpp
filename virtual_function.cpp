@@ -33,14 +33,21 @@ class C: public B
 };
 
 
-//----------------
-// void g(A& arg)
-//void g(B& arg)
-//{
-    // arg.f();
-    //arg.f();
-//}
-//-----------------
+/*
+ void g(A& arg)
+ {
+     arg.f();
+ }
+*/
+
+// OR
+
+/*
+ void g(B& arg)
+ {
+     arg.f()
+ }
+*/
 
 int main()
 {   
@@ -55,8 +62,9 @@ int main()
     p3->f(); // RUN TIME POLYMORHISM
     
     //A x;
+    //g(x); // OUTPUT Class A
+    
     //B y;
-    //x.f();
-    //g(x);
-    //g(y);
+    //g(y); // OUTPUT Class B
+    
 }
