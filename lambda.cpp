@@ -161,7 +161,11 @@ int main()
     
     //sets each element in the vector to the sum of the
     //previous two elements.
-    generate_n(v.begin() + 2, elementcount - 2,
+    
+    // difference from generate() function is the second argument 
+   // is the Forward Iterator to the last position whereas in generate_n() function
+  // it is the number of values that are to be generated
+    generate_n(v.begin() + 2, elementcount - 2,         
     
     // CAPTURE BY VALUE
     // mutable ile capture by value olarak yakalanan deger modifiye edilebilir.
