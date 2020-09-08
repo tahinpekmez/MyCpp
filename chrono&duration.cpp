@@ -38,7 +38,12 @@ int main ()
   high_resolution_clock::time_point t1 = high_resolution_clock::now(); // epoch (baslangic zamani)
 
   std::cout << "1000 yidizi goster  ...\n";
-  for (int i=0; i<1000; ++i) std::cout << "*";
+  
+  for (int i=0; i<1000; ++i) 
+  	{
+		std::cout << "*";
+	}
+  
   std::cout << std::endl;
 
   high_resolution_clock::time_point t2 = high_resolution_clock::now(); // yildizlarin sayiminin bitis noktasi
