@@ -7,7 +7,7 @@ using namespace std;
 int main()
 {
 	cout << chrono::high_resolution_clock::period::den << endl; // alinacak zaman noktasinin uzunlugunu verir.
-	auto start_time = chrono::high_resolution_clock::now();     // den, sahip oldugumuz uzunluk; payda olarak belirlenir
+	auto start_time = chrono::high_resolution_clock::now();     // denumerator, sahip oldugumuz uzunluk; payda olarak belirlenir
 	int temp;
 	for (int i = 0; i< 242000000; i++)
 		temp+=temp;
