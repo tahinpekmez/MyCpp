@@ -4,20 +4,21 @@ using namespace std;
 struct node
 {
     int data;
-    node *next;
+    node *next; // "next" is next node.
 };
 
 class LinkedList
 {
     private:
-    node *head, *tail;
+    node *head, *tail; // tail is last node. head is first node and reference for traversal.
     public:
     LinkedList()
     {
         head = NULL;
         tail = NULL;
     }
-
+    
+    // CREATE a FUNCTION of ADDING a NODE TO OUR LINKED LIST
     void add_node(int n)
     {
         //node *tmp;
@@ -42,7 +43,8 @@ class LinkedList
     {
         return head;
     }
-
+    
+    // TRAVERSAL USING RECURSION
     static void display(node *head)
     {
         if(head == NULL)
@@ -56,7 +58,8 @@ class LinkedList
         }
         
     }
-
+    
+    // CONCATENATE a NODE and b NODE
     static void concatenate(node *a, node *b)
     {
         if(a != NULL && b != NULL)
@@ -88,8 +91,8 @@ int main()
     obj2.add_node(3);
     obj2.add_node(4);
 
-    LinkedList::concatenate(a.gethead(), b.gethead());
-    LinkedList::display(a.gethead());
+    LinkedList::concatenate(obj1.gethead(), obj2.gethead());
+    LinkedList::display(obj1.gethead());
 
     return 0;
 }
