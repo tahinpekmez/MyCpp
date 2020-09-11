@@ -45,7 +45,7 @@ int main()
 {
     // ALLOCATING 2 and 3 TO DEMONSTRATE DYNAMIC MEMORY ALLOCATION 
     Abstract *a = new Swap(2,3); 
-    a->print_swap();
+    a->print_swap(); // RUN-TIME POLYMORPHISM
     
     delete a; // DELETE ALLOCATING
 
