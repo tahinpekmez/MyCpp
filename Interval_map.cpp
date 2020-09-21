@@ -1,8 +1,4 @@
-#include <iostream>
-#include <iterator>
 #include <map>
-#include <limits>
-#include <list>
 
 template<typename K, typename V>
 class interval_map
