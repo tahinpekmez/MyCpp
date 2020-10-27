@@ -2,8 +2,7 @@
 #include <cstdlib> 
 #include <ctime> 
 
-int rand (void); // MAIN FONKSIYONUNDAN ONCE URETICI HAZIR 
-                 // FUNCTION PROTOTAYPE
+int rand (void);  // FUNCTION PROTOTAYPE
 int main()
 {
     std::srand(static_cast<unsigned int>(std::time(nullptr))); 
